@@ -18,17 +18,30 @@ body {
   background-color: var(--background-color);
 }
 
-.header {
+header {
   margin: 0px;
   display: flex;
 }
 
-.header nav {
+nav {
+  width: 70%;
+}
+
+header nav ul {
   display: flex;
   flex-direction: row;
-  margin: 0px 5%;
   align-items: center;
   justify-content: space-evenly;
+  list-style: none;
+}
+
+.hero-banner {
+  background-image: url(../images/me.jpeg);
+  height: 500px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
 }
 
 h1,
@@ -42,6 +55,59 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid --background-color;
+}
+
+#work-grid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "laptop laptop laptop"
+    "fibreoptic fibreoptic mri"
+    "nodes map map"
+    ;
+}
+
+#laptop {
+  grid-area: laptop;
+  background-image: url(../images/laptop.jpeg);
+}
+
+#fibreoptic {
+  grid-area: fibreoptic;
+  background-image: url(../images/fibreoptic.jpeg);
+}
+
+#mri {
+  grid-area: mri;
+  background-image: url(../images/mri.jpeg);
+}
+
+#nodes {
+  grid-area: nodes;
+  background-image: url(../images/nodes.jpeg);
+}
+
+#map {
+  grid-area: map;
+  background-image: url(../images/map.jpeg);
 }
 
 a:visited {
