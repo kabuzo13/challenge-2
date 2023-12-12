@@ -33,15 +33,29 @@ header nav ul {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
 }
 
 .hero-banner {
-  background-image: url(../images/me.jpeg);
-  height: 500px;
+  background-image: url(../images/me2.jpeg);
+  height: 400px;
   width: 100%;
   margin-bottom: 25px;
   background-size: cover;
   background-position: center;
+}
+
+.hero-banner h2 {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px;
+  height: 25px;
+  color: white;
+  font-size: 20px;
+  border-bottom: 15px solid rgba(0,0,0,0.7);
+  font-display: center;
 }
 
 h1,
@@ -57,20 +71,33 @@ p {
   margin: 0;
 }
 
+.page-wrapper h2 {
+  text-align: left;
+}
+
 .subHeading {
-  text-align: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px;
   width: 300px;
-  margin: 50px auto;
 }
 
 .heading {
   background-color: rgba(0,0,0,0.7);
-  padding: 15px;
+  padding: 20px;
   height: 25px;
   color: white;
-  font-size: 18px;
-  border-bottom: 5px solid --background-color;
+  font-size: 20px;
+  border-bottom: 15px solid rgba(0,0,0,0.7);
+  font-display: center;
+}
+
+.page-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
 }
 
 #work-grid {
@@ -121,4 +148,8 @@ a:hover {
 a:active {
 	color: red;
   cursor: grabbing;
+}
+
+.page-section-contact {
+  text-align: center;
 }
