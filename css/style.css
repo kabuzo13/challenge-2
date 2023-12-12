@@ -65,12 +65,6 @@ header nav ul {
   width: 150px;
 }
 
-p {
-  /* margin: 0px 0px 0px 10px;
-  border-left: purple solid 6px;
-  padding: 5px; */
-}
-
 .page {
   display:flex;
 }
@@ -156,5 +150,25 @@ a:active {
 }
 
 .page-section-contact {
-  text-align: center;
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #work-grid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "laptop"
+    "fibreoptic"
+    "mri"
+    "nodes"
+    "map"
+    ;
+  }
 }
