@@ -12,7 +12,7 @@ N/A
 
 Use the navigation bar to read more on the topics of: About Me, Work, and Contact. Click on the images in the 'Work' section to be taken to portfolio websites. 
 
-You can find the website deployed at: kabuzo13.github.io/challenge-2/
+You can find the website deployed at: kabuzo13.github.io/portfolio-css/
 
 ## Credits
 
